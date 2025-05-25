@@ -1,6 +1,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
+import Sobrisanté from "../assets/Sobrisanté.png";
+import TaskFlow from "../assets/Taskflow.png";
 
 const projects = [
   {
@@ -27,7 +29,7 @@ const projects = [
     title: "Le cabinet du Dr la COZ",
     description: "Site médical statique ultra-léger, accessible et compatible avec les contraintes des zones rurales. Interface inclusive avec fonctionnalités essentielles selon les normes WCAG 2.1 AAA.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/lovable-uploads/001b36da-32b8-4678-b330-4ab24d6d93d9.png",
+    image: Sobrisanté,
     live: "https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/",
   },
   {
@@ -37,6 +39,14 @@ const projects = [
     image: "/lovable-uploads/7ea47324-9df7-4836-9409-949b1f963a06.png",
     live: "https://myicconline.com",
   },
+  {
+    title: "TaskFlow",
+    description: "Application de gestion de tâches comme sur Trello avec fonctionnalités de collaboration en temps réel.",
+    technologies: ["React", "Tailwind CSS"],
+    image: TaskFlow,
+    live: "https://trello-clone-three-hazel.vercel.app/",
+  },
+
 ];
 
 const Projects = () => {
@@ -52,16 +62,17 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="glass-card overflow-hidden group transition-all hover:border-portfolio-primary/50 animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="relative h-48 overflow-hidden">
-                <img 
+              <div className="relative aspect-video overflow-hidden flex items-center justify-center">
+                <img
                   src={project.image}
-                  alt={project.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt={project.title}
+                  className="h-full w-full object-contain p-2 bg-neutral-900 rounded shadow"
+
                 />
                 <div className="absolute inset-0 bg-portfolio-dark/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                   {project.live && (
@@ -79,8 +90,8 @@ const Projects = () => {
                 <p className="text-white/70 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex} 
+                    <span
+                      key={techIndex}
                       className="px-3 py-1 text-xs rounded-full bg-portfolio-primary/20 text-portfolio-primary"
                     >
                       {tech}
