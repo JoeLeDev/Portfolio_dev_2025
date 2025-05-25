@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
 import Sobrisanté from "../assets/Sobrisanté.png";
-import TaskFlow from "../assets/Taskflow.png";
+import TaskFlow from "../assets/TaskFlow.png";
 
 const projects = [
   {
