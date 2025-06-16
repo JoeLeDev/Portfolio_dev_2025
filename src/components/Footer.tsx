@@ -45,9 +45,6 @@ const Footer = () => {
           <p className="text-white/50">
             © {currentYear} Jonathan Luembe. Tous droits réservés.
           </p>
-          <p className="text-white/30 text-sm mt-1">
-            Conçu et développé avec ❤️
-          </p>
         </div>
       </div>
     </footer>

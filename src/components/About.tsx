@@ -20,7 +20,7 @@ const About = () => {
               Mon parcours m'a permis d'acquérir des compétences solides en programmation, conception web, UX/UI design et gestion de projets. Actuellement en alternance chez Impact Centre Chrétien, je travaille sur des projets variés tels que la création d'un réseau social et d'un intranet.
             </p>
             <p className="text-white/70">
-              J'utilise des outils comme WordPress (avec Elementor) et React pour créer des expériences web interactives et centrées sur l'utilisateur.
+              J'utilise des outils comme WordPress (avec Elementor) ou React en frontend et principalement Nodes.js pour le back-end pour créer des expériences web interactives et centrées sur l'utilisateur.
             </p>
             <div>
               <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white">
@@ -38,7 +38,7 @@ const About = () => {
                 <span className="text-white/50 text-sm">2023 - 2025</span>
               </div>
               <h5 className="text-white/90 mb-2">Impact Centre Chrétien</h5>
-              <p className="text-white/70">Création d'un réseau social et d'un intranet en utilisant WordPress (avec Elementor) et React, collaboration avec des équipes multidisciplinaires.</p>
+              <p className="text-white/70">Création d'un réseau social et d'un intranet en utilisant React en frontend et Nodes.js pour le back-end avec une base de donnée en MangoDb, en collaboration avec des équipes multidisciplinaires.</p>
             </div>
             
             <div className="glass-card p-6 transition-all hover:border-portfolio-primary/50 group">
