@@ -9,21 +9,21 @@ const projects = [
     title: "Retour en Eden Academy",
     description: "Plateforme d'apprentissage en ligne basée sur Moodle, avec gestion des cours, utilisateurs et évaluations.",
     technologies: ["Moodle", "PHP", "MySQL"],
-    image: "/lovable-uploads/9542cc72-c40a-45cd-9d9b-a92b5c9220ec.png",
+    image: "/uploads/RetourEnEden.png",
     live: "https://retourenedenacademy.com",
   },
   {
     title: "Jonas' Shop",
     description: "Template de site e-commerce développé avec React et Tailwind CSS, mettant en avant des compétences en intégration web.",
     technologies: ["React", "Tailwind CSS"],
-    image: "/lovable-uploads/a7980f08-2569-4b4f-bf03-6aaf958638b0.png",
+    image: "/uploads/JonasShop.png",
     live: "https://shopping-site-tawny-iota.vercel.app",
   },
   {
     title: "Pannel Admin",
     description: "Tableau de bord administrateur avec gestion des utilisateurs, authentification, rôles dynamiques et édition des profils.",
     technologies: ["React", "Firebase"],
-    image: "/lovable-uploads/c25a36c3-9d84-4dc2-8285-1b83ece7b251.png",
+    image: "/uploads/AdminPanel.png",
   },
   {
     title: "Le cabinet du Dr la COZ",
@@ -36,7 +36,7 @@ const projects = [
     title: "My Icc Online",
     description: "Plateforme interactive permettant la gestion de groupes et d'utilisateurs, avec un design optimisé pour une navigation intuitive.",
     technologies: ["React", "Node.js", "MongoDB"],
-    image: "/lovable-uploads/7ea47324-9df7-4836-9409-949b1f963a06.png",
+    image: "/uploads/MyIcc.png",
     live: "https://myicconline.com",
   },
   {

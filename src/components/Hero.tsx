@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-portfolio-primary/20 backdrop-blur-xl overflow-hidden border border-portfolio-primary/30 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/75249043-b623-4303-923b-0237ac51d9c2.png" 
+                  src="/uploads/Moi.png" 
                   alt="Jonathan Luembe" 
                   className="w-full h-full object-cover"
                 />
