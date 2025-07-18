@@ -13,19 +13,6 @@ const projects = [
     live: "https://retourenedenacademy.com",
   },
   {
-    title: "Jonas' Shop",
-    description: "Template de site e-commerce développé avec React et Tailwind CSS, mettant en avant des compétences en intégration web.",
-    technologies: ["React", "Tailwind CSS"],
-    image: "/uploads/JonasShop.png",
-    live: "https://shopping-site-tawny-iota.vercel.app",
-  },
-  {
-    title: "Pannel Admin",
-    description: "Tableau de bord administrateur avec gestion des utilisateurs, authentification, rôles dynamiques et édition des profils.",
-    technologies: ["React", "Firebase"],
-    image: "/uploads/AdminPanel.png",
-  },
-  {
     title: "Le cabinet du Dr la COZ",
     description: "Site médical statique ultra-léger, accessible et compatible avec les contraintes des zones rurales. Interface inclusive avec fonctionnalités essentielles selon les normes WCAG 2.1 AAA.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -37,7 +24,7 @@ const projects = [
     description: "Plateforme interactive permettant la gestion de groupes et d'utilisateurs, avec un design optimisé pour une navigation intuitive.",
     technologies: ["React", "Node.js", "MongoDB"],
     image: "/uploads/MyIcc.png",
-    live: "https://myicconline.com",
+    live: "https://r-ss.vercel.app/",
   },
   {
     title: "TaskFlow",
