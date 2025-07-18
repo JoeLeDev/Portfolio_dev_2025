@@ -21,8 +21,8 @@ const projects = [
   },
   {
     title: "My Icc Online",
-    description: "Plateforme interactive permettant la gestion de groupes et d'utilisateurs, avec un design optimisé pour une navigation intuitive.",
-    technologies: ["React", "Node.js", "MongoDB"],
+    description: "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
+    technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     image: "/uploads/MyIcc.png",
     live: "https://r-ss.vercel.app/",
   },
