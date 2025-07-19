@@ -4,6 +4,7 @@ import { Github, Link } from "lucide-react";
 import Sobrisanté from "../assets/Sobrisanté.png";
 import TaskFlow from "../assets/TaskFlow.png";
 import MyIccOnline from "../assets/MyIccOnline.png";
+import ExpenseTracker from "../assets/ExpenseTracker.png"
 
 const projects = [
   {
@@ -34,6 +35,14 @@ const projects = [
     image: TaskFlow,
     live: "https://trello-clone-three-hazel.vercel.app/",
   },
+  {
+    "title": "Expense Tracker",
+    "description": "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
+    "technologies": ["React", "TypeScript", "Chakra UI", "Vitest"],
+    "image": ExpenseTracker,
+    "live": "https://expense-tracker-fl42.vercel.app/"
+  }
+  
 
 ];
 
