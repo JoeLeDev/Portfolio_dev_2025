@@ -5,6 +5,7 @@ import Sobrisanté from "../assets/Sobrisanté.png";
 import TaskFlow from "../assets/TaskFlow.png";
 import MyIccOnline from "../assets/MyIccOnline.png";
 import ExpenseTracker from "../assets/ExpenseTracker.png"
+import MusicRevenues from "../assets/MusicRevenues.png"
 
 const projects = [
   {
@@ -41,8 +42,14 @@ const projects = [
     "technologies": ["React", "TypeScript", "Chakra UI", "Vitest"],
     "image": ExpenseTracker,
     "live": "https://expense-tracker-fl42.vercel.app/"
+  },
+  {
+    "title": "Music Revenues",
+    "description": "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
+    "technologies": ["React", "Recharts"],
+    "image": MusicRevenues,
+    "live": "https://music-revenues.vercel.app/"
   }
-  
 
 ];
 
