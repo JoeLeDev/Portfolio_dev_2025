@@ -6,6 +6,7 @@ import TaskFlow from "../assets/TaskFlow.png";
 import MyIccOnline from "../assets/MyIccOnline.png";
 import ExpenseTracker from "../assets/ExpenseTracker.png"
 import MusicRevenues from "../assets/MusicRevenues.png"
+import DevBoard from "../assets/DevBoard.png"
 
 const projects = [
   {
@@ -37,18 +38,25 @@ const projects = [
     live: "https://trello-clone-three-hazel.vercel.app/",
   },
   {
-    "title": "Expense Tracker",
-    "description": "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
-    "technologies": ["React", "TypeScript", "Chakra UI", "Vitest"],
-    "image": ExpenseTracker,
-    "live": "https://expense-tracker-fl42.vercel.app/"
+    title: "Dev Board",
+    description: "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "Prisma", "Supabase"],
+    image: DevBoard,
+    live: "https://dev-board-4tfd-o602rdouf-joeledevs-projects.vercel.app/",
   },
   {
-    "title": "Music Revenues",
-    "description": "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
-    "technologies": ["React", "Recharts"],
-    "image": MusicRevenues,
-    "live": "https://music-revenues.vercel.app/"
+    title: "Expense Tracker",
+    description: "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
+    technologies: ["React", "TypeScript", "Chakra UI", "Vitest"],
+    image: ExpenseTracker,
+    live: "https://expense-tracker-fl42.vercel.app/"
+  },
+  {
+    title: "Music Revenues",
+    description: "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
+    technologies: ["React", "Recharts"],
+    image: MusicRevenues,
+    live: "https://music-revenues.vercel.app/"
   }
 
 ];
