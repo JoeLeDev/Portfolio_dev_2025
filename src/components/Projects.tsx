@@ -14,7 +14,7 @@ const projects = [
     description: "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "Prisma", "Supabase"],
     image: DevBoard,
-    live: "https://dev-board-4tfd-o602rdouf-joeledevs-projects.vercel.app/",
+    live: "https://dev-board-one.vercel.app/",
   },
   {
     title: "Retour en Eden Academy",
