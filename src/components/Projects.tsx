@@ -32,10 +32,10 @@ const projects = [
   },
   {
     title: "My Icc Online",
-    description: "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
-    technologies: ["React", "Node.js", "MongoDB", "Firebase"],
+    description: "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, suivre des formations, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
+    technologies: ["Elementor", "Php", "AWS"],
     image: MyIccOnline,
-    live: "https://r-ss.vercel.app/",
+    live: "https://myicconline.com",
   },
   {
     title: "TaskFlow",
