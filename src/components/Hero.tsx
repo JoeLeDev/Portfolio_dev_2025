@@ -13,16 +13,16 @@ const Hero = () => {
             </h1>
             <h2 className="text-white/80 mb-6">Développeur Full Stack</h2>
             <p className="text-white/70 text-lg mb-8 max-w-xl">
-              Étudiant en troisième année de Bachelor Développeur Web à HETIC, spécialisé dans
-              le développement frontend avec une forte appétence pour React.
+              Diplômé d'un Bachelor Développeur Web à HETIC, spécialisé dans
+              le développement full stack avec une forte appétence pour React/Next.js.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white">
-                <a href="#projects">View My Work</a>
+                <a href="#projects">Voir mes projets</a>
               </Button>
               <Button asChild variant="outline" className="border-portfolio-primary text-white hover:bg-portfolio-primary/10">
-                <a href="#contact">Contact Me</a>
+                <a href="#contact">Me Contacter</a>
               </Button>
             </div>
           </div>

@@ -1,65 +1,81 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
-import Sobrisanté from "../assets/Sobrisanté.png";
+import Sobrisante from "../assets/Sobrisante.png"; 
 import TaskFlow from "../assets/TaskFlow.png";
 import MyIccOnline from "../assets/MyIccOnline.png";
-import ExpenseTracker from "../assets/ExpenseTracker.png"
-import MusicRevenues from "../assets/MusicRevenues.png"
-import DevBoard from "../assets/DevBoard.png"
+import ExpenseTracker from "../assets/ExpenseTracker.png";
+import MusicRevenues from "../assets/MusicRevenues.png";
+import DevBoard from "../assets/DevBoard.png";
+import BikeSense from "../assets/BikeSense.png"; 
 
 const projects = [
   {
+    title: "BikeSense",
+    description:
+      "Solution IoT pour boutique de vélos : suivi temps réel de l’environnement (température, humidité, vibration), alertes et dashboard web réactif. Authentification, liste d’alertes, et UX soignée.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MQTT", "Firebase Auth"],
+    image: BikeSense,
+    // live: "https://..." // (si tu as un lien public plus tard)
+  },
+  {
     title: "Dev Board",
-    description: "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
+    description:
+      "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "Prisma", "Supabase"],
     image: DevBoard,
     live: "https://dev-board-one.vercel.app/",
   },
   {
     title: "Retour en Eden Academy",
-    description: "Plateforme d'apprentissage en ligne basée sur Moodle, avec gestion des cours, utilisateurs et évaluations.",
+    description:
+      "Plateforme d'apprentissage en ligne basée sur Moodle, avec gestion des cours, utilisateurs et évaluations.",
     technologies: ["Moodle", "PHP", "MySQL"],
     image: "/uploads/RetourEnEden.png",
     live: "https://retourenedenacademy.com",
   },
   {
     title: "Le cabinet du Dr la COZ",
-    description: "Site médical statique ultra-léger, accessible et compatible avec les contraintes des zones rurales. Interface inclusive avec fonctionnalités essentielles selon les normes WCAG 2.1 AAA.",
+    description:
+      "Site médical statique ultra-léger, accessible et compatible avec les contraintes des zones rurales. Interface inclusive avec fonctionnalités essentielles selon les normes WCAG 2.1 AAA.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: Sobrisanté,
+    image: Sobrisante,
     live: "https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/",
   },
   {
     title: "My Icc Online",
-    description: "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, suivre des formations, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
-    technologies: ["Elementor", "Php", "AWS"],
+    description:
+      "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, suivre des formations, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
+    technologies: ["WordPress (Elementor)", "PHP", "AWS"],
     image: MyIccOnline,
     live: "https://myicconline.com",
   },
   {
     title: "TaskFlow",
-    description: "Application de gestion de tâches comme sur Trello avec fonctionnalités de collaboration en temps réel.",
+    description:
+      "Application de gestion de tâches comme sur Trello avec fonctionnalités de collaboration en temps réel.",
     technologies: ["React", "Tailwind CSS"],
     image: TaskFlow,
     live: "https://trello-clone-three-hazel.vercel.app/",
   },
   {
     title: "Expense Tracker",
-    description: "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
+    description:
+      "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
     technologies: ["React", "TypeScript", "Chakra UI", "Vitest"],
     image: ExpenseTracker,
-    live: "https://expense-tracker-fl42.vercel.app/"
+    live: "https://expense-tracker-fl42.vercel.app/",
   },
   {
     title: "Music Revenues",
-    description: "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
+    description:
+      "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
     technologies: ["React", "Recharts"],
     image: MusicRevenues,
-    live: "https://music-revenues.vercel.app/"
-  }
-
+    live: "https://music-revenues.vercel.app/",
+  },
 ];
+
 
 const Projects = () => {
   return (

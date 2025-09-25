@@ -5,7 +5,7 @@ const skillCategories = [
   {
     title: "Technologies",
     skills: [
-      { name: "React", description: "Création d'interfaces utilisateur dynamiques et interactives, composants réutilisables, optimisation des performances." },
+      { name: "Next.js", description: "Création d'interfaces utilisateur dynamiques et interactives, composants réutilisables, optimisation des performances." },
       { name: "Node.js", description: "Développement de serveurs rapides et évolutifs, utilisation de frameworks comme Express.js, intégration avec MongoDB." },
       { name: "WordPress", description: "Conception de sites web adaptatifs, personnalisation avancée via thèmes et plugins, gestion efficace du contenu." },
       { name: "MongoDB", description: "Gestion de données avec une base NoSQL, modélisation de données pour des applications scalables, intégration avec des environnements JavaScript/Node.js." },
@@ -30,7 +30,7 @@ const Skills = () => {
         <div className="mb-12 text-center">
           <h2 className="text-gradient inline-block mb-2">Mes Compétences</h2>
           <p className="text-white/70 max-w-2xl mx-auto">
-            Voici un aperçu des technologies et outils que j'utilise dans mon travail de développeur web.
+            Voici un aperçu des technologies et outils en programmation que j'utilise dans mon travail de développeur web.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Skills = () => {
         </div>
 
         <div className="mt-16 glass-card p-8 text-center animate-fade-in">
-          <h3 className="text-white mb-6">Autres compétences</h3>
+          <h3 className="text-white mb-6">Autres compétences non mentionnées</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "UX/UI Design", "Responsive Design", "Elementor", "LMS (Moodle)", 
