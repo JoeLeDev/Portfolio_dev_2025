@@ -14,9 +14,9 @@ const projects = [
     title: "BikeSense",
     description:
       "Solution IoT pour boutique de vélos : suivi temps réel de l’environnement (température, humidité, vibration), alertes et dashboard web réactif. Authentification, liste d’alertes, et UX soignée.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MQTT", "Firebase Auth"],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MQTT", "Auth JWT"],
     image: BikeSense,
-    // live: "https://..." // (si tu as un lien public plus tard)
+     github: "https://github.com/JoeLeDev/BikeSense"
   },
   {
     title: "Dev Board",
@@ -25,6 +25,7 @@ const projects = [
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "Prisma", "Supabase"],
     image: DevBoard,
     live: "https://dev-board-one.vercel.app/",
+    github: "https://github.com/JoeLeDev/DevBoard"
   },
   {
     title: "Retour en Eden Academy",
@@ -57,6 +58,7 @@ const projects = [
     technologies: ["React", "Tailwind CSS"],
     image: TaskFlow,
     live: "https://trello-clone-three-hazel.vercel.app/",
+    github: "https://github.com/JoeLeDev/Trello_clone"
   },
   {
     title: "Expense Tracker",
@@ -65,6 +67,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Chakra UI", "Vitest"],
     image: ExpenseTracker,
     live: "https://expense-tracker-fl42.vercel.app/",
+    github: "https://github.com/JoeLeDev/Expense-tracker"
   },
   {
     title: "Music Revenues",
@@ -73,6 +76,7 @@ const projects = [
     technologies: ["React", "Recharts"],
     image: MusicRevenues,
     live: "https://music-revenues.vercel.app/",
+    github: "https://github.com/JoeLeDev/MusicRevenues"
   },
 ];
 
@@ -108,6 +112,14 @@ const Projects = () => {
                       <a href={project.live} target="_blank" rel="noopener noreferrer">
                         <Link className="w-4 h-4 mr-2" />
                         Demo
+                      </a>
+                    </Button>
+                  )}
+                  {project.github && (
+                    <Button asChild size="sm" variant="outline" className="rounded-full bg-white/10 backdrop-blur-sm border-white/30 hover:bg-white/20 hover:border-white">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Github
                       </a>
                     </Button>
                   )}
