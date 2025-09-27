@@ -7,7 +7,7 @@ import MyIccOnline from "../assets/MyIccOnline.png";
 import ExpenseTracker from "../assets/ExpenseTracker.png";
 import MusicRevenues from "../assets/MusicRevenues.png";
 import DevBoard from "../assets/DevBoard.png";
-import BikeSense from "../assets/BikeSense.png"; 
+import BikeSense from "../assets/Bikesense.png"; 
 
 const projects = [
   {
