@@ -8,7 +8,8 @@ import ExpenseTracker from "../assets/ExpenseTracker.png";
 import MusicRevenues from "../assets/MusicRevenues.png";
 import DevBoard from "../assets/DevBoard.png";
 import BikeSense from "../assets/Bikesense.png"; 
-
+import AdvalisSaaS from "../assets/Advalis.png";
+import SarahPortfolio from "../assets/SarahPortfolio.png";
 const projects = [
   {
     title: "BikeSense",
