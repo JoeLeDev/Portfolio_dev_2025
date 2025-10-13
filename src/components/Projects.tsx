@@ -61,23 +61,23 @@ const projects = [
     github: "https://github.com/JoeLeDev/Trello_clone"
   },
   {
-    title: "Expense Tracker",
-    description:
-      "Clone de l'application Sumeria (Lydia) permettant la gestion des dépenses entre amis avec calcul automatique des soldes.",
-    technologies: ["React", "TypeScript", "Chakra UI", "Vitest"],
-    image: ExpenseTracker,
-    live: "https://expense-tracker-fl42.vercel.app/",
-    github: "https://github.com/JoeLeDev/Expense-tracker"
-  },
-  {
-    title: "Music Revenues",
-    description:
-      "Application permettant de calculer les revenus d'un artiste en fonction des ventes de ses morceaux.",
-    technologies: ["React", "Recharts"],
-    image: MusicRevenues,
-    live: "https://music-revenues.vercel.app/",
-    github: "https://github.com/JoeLeDev/MusicRevenues"
-  },
+{
+  title: "Portfolio Photographe – Sarah",
+  description:
+    "Portfolio professionnel pour photographe : vitrines de séries et projets, grilles responsives optimisées (Lazy loading Next/Image), pages individuelles avec métadonnées SEO, et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
+  technologies: ["Next.js 14 (App Router)", "TypeScript", "Tailwind CSS", "shadcn/ui", "Next/Image"],
+  image: SarahPortfolio,
+   live: "https://porfolio-sarah.vercel.app/",
+  github: "https://github.com/JoeLeDev/Porfolio-Sarah"
+},
+{
+  title: "Advalis – SaaS de conseil",
+  description:
+    "Création d’un MVP SaaS pour une société de conseil : gestion des offres et prestations, onboarding client, suivi des demandes et pipeline commercial, espace client simplifié et tableau de bord (indicateurs clés). Architecture full-stack moderne avec auth, rôles et modèles de données extensibles.",
+  technologies: ["Next.js 14 (Full-stack)", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "shadcn/ui"],
+  image: AdvalisSaaS,
+   live: "https://advalis.vercel.app/" ,
+  github: "https://github.com/JoeLeDev/Advalis"
 ];
 
 
