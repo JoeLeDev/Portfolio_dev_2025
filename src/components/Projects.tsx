@@ -20,6 +20,24 @@ const projects = [
      github: "https://github.com/JoeLeDev/BikeSense"
   },
   {
+    title: "Portfolio Photographe – Sarah",
+    description:
+      "Portfolio professionnel pour photographe : vitrines de séries et projets, grilles responsives optimisées (Lazy loading Next/Image), pages individuelles avec métadonnées SEO, et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
+    technologies: ["Next.js 14 (App Router)", "TypeScript", "Tailwind CSS", "shadcn/ui", "Next/Image"],
+    image: SarahPortfolio,
+     live: "https://porfolio-sarah.vercel.app/",
+    github: "https://github.com/JoeLeDev/Porfolio-Sarah"
+  },
+  {
+    title: "Advalis – SaaS de conseil",
+    description:
+      "Création d’un MVP SaaS pour une société de conseil : gestion des offres et prestations, onboarding client, suivi des demandes et pipeline commercial, espace client simplifié et tableau de bord (indicateurs clés). Architecture full-stack moderne avec auth, rôles et modèles de données extensibles.",
+    technologies: ["Next.js 14 (Full-stack)", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "shadcn/ui"],
+    image: AdvalisSaaS,
+     live: "https://advalis.vercel.app/" ,
+    github: "https://github.com/JoeLeDev/Advalis"
+  },
+  {
     title: "Dev Board",
     description:
       "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
@@ -60,25 +78,7 @@ const projects = [
     image: TaskFlow,
     live: "https://trello-clone-three-hazel.vercel.app/",
     github: "https://github.com/JoeLeDev/Trello_clone"
-  },
-{
-  title: "Portfolio Photographe – Sarah",
-  description:
-    "Portfolio professionnel pour photographe : vitrines de séries et projets, grilles responsives optimisées (Lazy loading Next/Image), pages individuelles avec métadonnées SEO, et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
-  technologies: ["Next.js 14 (App Router)", "TypeScript", "Tailwind CSS", "shadcn/ui", "Next/Image"],
-  image: SarahPortfolio,
-   live: "https://porfolio-sarah.vercel.app/",
-  github: "https://github.com/JoeLeDev/Porfolio-Sarah"
-},
-{
-  title: "Advalis – SaaS de conseil",
-  description:
-    "Création d’un MVP SaaS pour une société de conseil : gestion des offres et prestations, onboarding client, suivi des demandes et pipeline commercial, espace client simplifié et tableau de bord (indicateurs clés). Architecture full-stack moderne avec auth, rôles et modèles de données extensibles.",
-  technologies: ["Next.js 14 (Full-stack)", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "shadcn/ui"],
-  image: AdvalisSaaS,
-   live: "https://advalis.vercel.app/" ,
-  github: "https://github.com/JoeLeDev/Advalis"
-}
+  }
 ];
 
 
