@@ -61,7 +61,6 @@ const projects = [
     live: "https://trello-clone-three-hazel.vercel.app/",
     github: "https://github.com/JoeLeDev/Trello_clone"
   },
-  {
 {
   title: "Portfolio Photographe – Sarah",
   description:
@@ -79,6 +78,7 @@ const projects = [
   image: AdvalisSaaS,
    live: "https://advalis.vercel.app/" ,
   github: "https://github.com/JoeLeDev/Advalis"
+}
 ];
 
 
