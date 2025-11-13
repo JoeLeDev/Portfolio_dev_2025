@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Portfolio Photographe – Sarah",
     description:
-      "Portfolio professionnel pour photographe : vitrines de séries et projets, grilles responsives optimisées (Lazy loading Next/Image), pages individuelles avec métadonnées SEO, et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
+      "Portfolio professionnel pour photographe : vitrines de séries et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     image: SarahPortfolio,
      live: "https://porfolio-sarah.vercel.app/",
