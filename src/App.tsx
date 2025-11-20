@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import HeadSEO from "./Seo";
 import NotFound from "./pages/NotFound";
 import { HelmetProvider } from 'react-helmet-async';
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => {
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <HeadSEO />
+        <GoogleAnalytics />
         <TooltipProvider>
           <Toaster />
           <Sonner />
