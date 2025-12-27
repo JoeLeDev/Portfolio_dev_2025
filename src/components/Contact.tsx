@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Github, Mail, Linkedin, Link } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -56,14 +56,18 @@ const Contact = () => {
           <div className="space-y-8 animate-fade-in-left">
             <h3 className="text-white">Restons en Contact</h3>
             <p className="text-white/70">
-              Que vous ayez une question, une idée de projet ou simplement envie de dire bonjour, n'hésitez pas à me contacter. Remplissez le formulaire ou contactez-moi via mes réseaux sociaux, et je vous répondrai dès que possible.
-              Voici mon site de contact freelance : https://joe-labs.vercel.app/
+              Que vous ayez une question, une idée de projet ou une proposition de collaboration, n'hésitez pas à me contacter. Remplissez le formulaire ou contactez-moi via mon site de contact freelance, et je vous répondrai dès que possible.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-center space-x-4 text-white/80">
                 <Mail className="w-5 h-5 text-portfolio-primary" />
                 <span>jonathanluembe@yahoo.com</span>
+              </div>
+
+              <div className="flex items-center space-x-4 text-white/80">
+                <Link className="w-5 h-5 text-portfolio-primary" />
+                <a href="https://joe-labs.vercel.app/" target="_blank" rel="noopener noreferrer">https://joe-labs.vercel.app/</a>
               </div>
 
               <div className="flex space-x-4">

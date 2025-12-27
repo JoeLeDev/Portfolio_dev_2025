@@ -23,7 +23,7 @@ export const GoogleAnalyticsTracker = () => {
     if (GA_MEASUREMENT_ID) {
       pageview(location.pathname + location.search);
     }
-  }, [location]);
+  }, [location.pathname, location.search]);
 
   return null;
 };
