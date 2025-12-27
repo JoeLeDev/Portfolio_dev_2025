@@ -57,6 +57,7 @@ const Contact = () => {
             <h3 className="text-white">Restons en Contact</h3>
             <p className="text-white/70">
               Que vous ayez une question, une idée de projet ou simplement envie de dire bonjour, n'hésitez pas à me contacter. Remplissez le formulaire ou contactez-moi via mes réseaux sociaux, et je vous répondrai dès que possible.
+              Voici mon site de contact freelance : https://joe-labs.vercel.app/
             </p>
 
             <div className="space-y-4">
