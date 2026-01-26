@@ -34,11 +34,11 @@ const About = () => {
             
             <div className="glass-card p-6 transition-all hover:border-portfolio-primary/50 group">
               <div className="mb-2 flex justify-between items-center">
-                <h4 className="text-portfolio-primary font-bold">Développeur Web</h4>
-                <span className="text-white/50 text-sm">2023 - 2025</span>
+                <h4 className="text-portfolio-primary font-bold">Master Développeur Web & Cybersécurité</h4>
+                <span className="text-white/50 text-sm">2026 - 2028</span>
               </div>
-              <h5 className="text-white/90 mb-2">Impact Centre Chrétien</h5>
-              <p className="text-white/70">Création d'un réseau social et d'un intranet en utilisant React en frontend et Nodes.js pour le back-end avec une base de donnée en MangoDb, en collaboration avec des équipes multidisciplinaires.</p>
+              <h5 className="text-white/90 mb-2">Live Campus</h5>
+              <p className="text-white/70">Formation en alternance à la poursuite d'un diplôme de Master Développeur Web & Cybersécurité, en collaboration avec des équipes multidisciplinaires.</p>
             </div>
             
             <div className="glass-card p-6 transition-all hover:border-portfolio-primary/50 group">
