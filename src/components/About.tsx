@@ -14,13 +14,13 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-white">Qui suis-je?</h3>
             <p className="text-white/70">
-              Diplômé d'un Bachelor Développeur Web à <strong className="text-portfolio-primary"><a href="https://www.hetic.net/?gge_source=google&gge_medium=cpc&gge_term=hetic&gge_campaign=Search-MarquePure&gad_source=1&gad_campaignid=81530319&gbraid=0AAAAAD8alhHNibzQrZyN69AfRS63mvW9g&gclid=Cj0KCQjw_8rBBhCFARIsAJrc9yCLjb9kSASAQ232gqMoC71TOwGQYYEVjwywdJE6VJt975HygNkgc8AaAgzLEALw_wcB">HETIC</a></strong>, je me spécialise dans le développement full stack avec une forte appétence pour React.
+              Étudiant en master Développeur Web & Cybersécurité à <strong className="text-portfolio-primary"><a href="https://www.hetic.net/?gge_source=google&gge_medium=cpc&gge_term=hetic&gge_campaign=Search-MarquePure&gad_source=1&gad_campaignid=81530319&gbraid=0AAAAAD8alhHNibzQrZyN69AfRS63mvW9g&gclid=Cj0KCQjw_8rBBhCFARIsAJrc9yCLjb9kSASAQ232gqMoC71TOwGQYYEVjwywdJE6VJt975HygNkgc8AaAgzLEALw_wcB">LiveCampus</a></strong>, je me spécialise dans le développement full stack avec une forte appétence pour React.
             </p>
             <p className="text-white/70">
-              Mon parcours m'a permis d'acquérir des compétences solides en programmation, conception web, UX/UI design et gestion de projets. Fort de mon expérience en alternance chez Impact Centre Chrétien, je travaille sur des projets variés tels que la création d'un réseau social et d'un intranet.
+              Mon parcours m'a permis d'acquérir des compétences solides en programmation, conception web, UX/UI design et des notions de cybersécurité. Fort de mon expérience en alternance chez Impact Centre Chrétien, je travaille sur des projets variés tels que la création d'un réseau social et d'un intranet.
             </p>
             <p className="text-white/70">
-              J'utilise des outils comme WordPress (avec Elementor) ou React en frontend et principalement Nodes.js pour le back-end pour créer des expériences web interactives et centrées sur l'utilisateur déployées sur différents environnements tels que OVH ou AWS.
+              J'utilise principalement React/Next.js en frontend et Node.js pour le back-end pour créer des expériences web interactives et centrées sur l'utilisateur déployées sur différents environnements tels que OVH ou AWS.
             </p>
             <div>
               <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white">
