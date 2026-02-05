@@ -13,7 +13,7 @@ const Hero = () => {
             </h1>
             <h2 className="text-white/80 mb-6">Développeur Full Stack</h2>
             <p className="text-white/70 text-lg mb-8 max-w-xl">
-              Diplômé d'un Bachelor Développeur Web à HETIC, spécialisé dans
+              Étudiant en master Développeur Web & Cybersécurité à LiveCampus, spécialisé dans
               le développement full stack avec une forte appétence pour React/Next.js.
             </p>
             
