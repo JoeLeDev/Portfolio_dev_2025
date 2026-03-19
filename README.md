@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio professionnel de développeur web. Ce site met en av
 
 ## 🔗 Site en ligne
 
-**URL**: [https://portfolio-dev-2025.vercel.app](https://portfolio-dev-2025.vercel.app)
+**URL**: [https://jonathanluembe.dev
 
 ## 🛠️ Technologies utilisées
 
