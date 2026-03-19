@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio professionnel de développeur web. Ce site met en av
 
 ## 🔗 Site en ligne
 
-**URL**: [https://jonathanluembe.dev
+**URL**: [https://jonathanluembe.dev]
 
 ## 🛠️ Technologies utilisées
 
