@@ -1,15 +1,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
-import Sobrisante from "../assets/Sobrisante.png"; 
-import TaskFlow from "../assets/TaskFlow.png";
 import MyIccOnline from "../assets/MyIccOnline.png";
-import ExpenseTracker from "../assets/ExpenseTracker.png";
-import MusicRevenues from "../assets/MusicRevenues.png";
 import DevBoard from "../assets/DevBoard.png";
 import BikeSense from "../assets/Bikesense.png"; 
 import AdvalisSaaS from "../assets/Advalis.png";
 import SarahPortfolio from "../assets/SarahPortfolio.png";
+import RetourEnEden from "../assets/RetourEnEden.png";
 const projects = [
   {
     title: "BikeSense",
@@ -38,6 +35,14 @@ const projects = [
     github: "https://github.com/JoeLeDev/Advalis"
   },
   {
+    title: "Retour en Eden Academy",
+    description:
+      "Refonte d'une plateforme d'apprentissage en ligne basée sur Moodle en React et Node.js, avec gestion des cours, utilisateurs et évaluations.",
+    technologies: ["React", "Node.js", "Tailwind CSS", "TypeScript", "Express", "MariaDB", "Docker"],
+    image: RetourEnEden,
+    live: "https://retourenedenacademy.com",
+  },
+  {
     title: "Dev Board",
     description:
       "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
@@ -47,22 +52,6 @@ const projects = [
     github: "https://github.com/JoeLeDev/DevBoard"
   },
   {
-    title: "Retour en Eden Academy",
-    description:
-      "Plateforme d'apprentissage en ligne basée sur Moodle, avec gestion des cours, utilisateurs et évaluations.",
-    technologies: ["Moodle", "PHP", "MySQL"],
-    image: "/uploads/RetourEnEden.png",
-    live: "https://retourenedenacademy.com",
-  },
-  {
-    title: "Le cabinet du Dr la COZ",
-    description:
-      "Site médical statique ultra-léger, accessible et compatible avec les contraintes des zones rurales. Interface inclusive avec fonctionnalités essentielles selon les normes WCAG 2.1 AAA.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: Sobrisante,
-    live: "https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/",
-  },
-  {
     title: "My Icc Online",
     description:
       "Réseau social moderne combinant les codes de Facebook et LinkedIn. L’utilisateur peut publier des posts, rejoindre des groupes, suivre des formations, discuter en temps réel, et gérer son profil dans un environnement fluide et sécurisé.",
@@ -70,15 +59,6 @@ const projects = [
     image: MyIccOnline,
     live: "https://myicconline.com",
   },
-  {
-    title: "TaskFlow",
-    description:
-      "Application de gestion de tâches comme sur Trello avec fonctionnalités de collaboration en temps réel.",
-    technologies: ["React", "Tailwind CSS"],
-    image: TaskFlow,
-    live: "https://trello-clone-three-hazel.vercel.app/",
-    github: "https://github.com/JoeLeDev/Trello_clone"
-  }
 ];
 
 
