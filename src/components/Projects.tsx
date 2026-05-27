@@ -41,6 +41,7 @@ const projects = [
     technologies: ["React", "Node.js", "Tailwind CSS", "TypeScript", "Express", "MariaDB", "Docker"],
     image: RetourEnEden,
     live: "https://retourenedenacademy.com",
+    github: "https://github.com/JoeLeDev/Retourenedenacademy"
   },
   {
     title: "Dev Board",

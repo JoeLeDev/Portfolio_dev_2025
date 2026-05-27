@@ -67,7 +67,7 @@ const Contact = () => {
 
               <div className="flex items-center space-x-4 text-white/80">
                 <Link className="w-5 h-5 text-portfolio-primary" />
-                <a href="https://joe-labs.vercel.app/" target="_blank" rel="noopener noreferrer">https://joe-labs.vercel.app/</a>
+                <a href="https://freelance.jonathanluembe.dev/" target="_blank" rel="noopener noreferrer">https://freelance.jonathanluembe.dev/</a>
               </div>
 
               <div className="flex space-x-4">
