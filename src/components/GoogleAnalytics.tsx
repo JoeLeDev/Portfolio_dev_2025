@@ -5,6 +5,24 @@ import { Helmet } from 'react-helmet-async';
 // Récupère l'ID Google Analytics depuis les variables d'environnement
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_ID;
 
+const initGoogleAnalytics = () => {
+  if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) {
+    return;
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag =
+    window.gtag ||
+    function gtag(...args: any[]) {
+      window.dataLayer.push(args);
+    };
+
+  window.gtag('js', new Date());
+  window.gtag('config', GA_MEASUREMENT_ID, {
+    page_path: window.location.pathname + window.location.search,
+  });
+};
+
 // Fonction pour envoyer un événement page_view à GA4
 const pageview = (url: string) => {
   if (typeof window !== 'undefined' && window.gtag && GA_MEASUREMENT_ID) {
@@ -30,6 +48,9 @@ export const GoogleAnalyticsTracker = () => {
 
 // Composant principal qui charge les scripts GA4
 const GoogleAnalytics = () => {
+  useEffect(() => {
+    initGoogleAnalytics();
+  }, []);
 
   // Ne rien afficher si l'ID GA n'est pas configuré
   if (!GA_MEASUREMENT_ID) {
@@ -43,16 +64,6 @@ const GoogleAnalytics = () => {
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </script>
     </Helmet>
   );
 };
