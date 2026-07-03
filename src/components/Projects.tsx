@@ -45,7 +45,7 @@ const projects = [
       "Création d’un MVP SaaS pour une société de conseil : gestion des offres et prestations, onboarding client, suivi des demandes et pipeline commercial, espace client simplifié et tableau de bord (indicateurs clés). Architecture full-stack moderne avec auth, rôles et modèles de données extensibles.",
     technologies: ["Next.js 14", "TypeScript", "Tailwind CSS"],
     image: AdvalisSaaS,
-     live: "https://www.advalis.fr/" ,
+     live: "https://advalis.vercel.app/" ,
   },
   {
     title: "Retour en Eden Academy",
