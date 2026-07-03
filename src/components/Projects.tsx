@@ -5,9 +5,10 @@ import MyIccOnline from "../assets/MyIccOnline.png";
 import DevBoard from "../assets/DevBoard.png";
 import BikeSense from "../assets/Bikesense.png"; 
 import AdvalisSaaS from "../assets/Advalis.png";
-import SarahPortfolio from "../assets/SarahPortfolio.png";
 import RetourEnEden from "../assets/RetourEnEden.png";
 import CapitaineDepan from "../assets/CapitaineDepan.png";
+import IccConges from "../assets/IccConges.png";
+import LogistiqueCite from "../assets/LogistiqueCite.png";
 const projects = [
   {
     title: "Capitaine Depan'",
@@ -19,21 +20,26 @@ const projects = [
     github: "https://github.com/JoeLeDev/Capitaine_Depan",
   },
   {
+    title: "ICC Congés — Impact Centre Chrétien",
+    description:
+      "Système de gestion et validation des congés pour les employés d'Impact Centre Chrétien. Workflow multi-niveaux (employé → manager → RH → direction), rôles et permissions, MFA pour les comptes sensibles, tableaux de bord dédiés et relances automatiques.",
+    technologies: ["Next.js 15", "React 19", "Tailwind CSS 4", "Supabase", "MFA", "Vercel", "Playwright"],
+    image: IccConges,
+  },
+  {
+    title: "Logistique Cité",
+    description:
+      "Application PWA pour gérer les sorties et retours de meubles (tables, mange-debout). Formulaires emprunt/retour, stocks mis à jour automatiquement, mode hors-ligne avec synchro à la reconnexion, et gestion admin des stocks.",
+    technologies: ["Vite", "React", "TypeScript", "PWA", "Supabase", "Vercel"],
+    image: LogistiqueCite,
+  },
+  {
     title: "BikeSense",
     description:
       "Solution IoT pour boutique de vélos : suivi temps réel de l’environnement (température, humidité, vibration), alertes et dashboard web réactif. Authentification, liste d’alertes, et UX soignée.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MQTT", "Auth JWT"],
     image: BikeSense,
      github: "https://github.com/JoeLeDev/BikeSense"
-  },
-  {
-    title: "Portfolio Photographe – Sarah",
-    description:
-      "Portfolio professionnel pour photographe : vitrines de séries et formulaire de contact. Navigation fluide, focus accessibilité et performance pour un rendu photo fidèle.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: SarahPortfolio,
-     live: "https://porfolio-sarah.vercel.app/",
-    github: "https://github.com/JoeLeDev/Porfolio-Sarah"
   },
   {
     title: "Advalis – SaaS de conseil",
@@ -52,15 +58,6 @@ const projects = [
     image: RetourEnEden,
     live: "https://retourenedenacademy.com",
     github: "https://github.com/JoeLeDev/Retourenedenacademy"
-  },
-  {
-    title: "Dev Board",
-    description:
-      "Application web moderne pensée pour centraliser les projets et faciliter la collaboration entre développeurs. Elle offre une interface claire et interactive permettant de gérer ses tâches, suivre la progression et visualiser les métriques clés en temps réel.",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "Prisma", "Supabase"],
-    image: DevBoard,
-    live: "https://dev-board-one.vercel.app/",
-    github: "https://github.com/JoeLeDev/DevBoard"
   },
   {
     title: "My Icc Online",
