@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
 import MyIccOnline from "../assets/MyIccOnline.png";
-import DevBoard from "../assets/DevBoard.png";
 import BikeSense from "../assets/Bikesense.png"; 
 import AdvalisSaaS from "../assets/Advalis.png";
 import RetourEnEden from "../assets/RetourEnEden.png";
@@ -17,7 +16,6 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Resend", "Vercel"],
     image: CapitaineDepan,
     live: "https://www.capitainedepan.com/",
-    github: "https://github.com/JoeLeDev/Capitaine_Depan",
   },
   {
     title: "ICC Congés — Impact Centre Chrétien",
@@ -48,7 +46,6 @@ const projects = [
     technologies: ["Next.js 14", "TypeScript", "Tailwind CSS"],
     image: AdvalisSaaS,
      live: "https://www.advalis.fr/" ,
-    github: "https://github.com/JoeLeDev/Advalis"
   },
   {
     title: "Retour en Eden Academy",
@@ -57,7 +54,6 @@ const projects = [
     technologies: ["React", "Node.js", "Tailwind CSS", "TypeScript", "Express", "MariaDB", "Docker"],
     image: RetourEnEden,
     live: "https://retourenedenacademy.com",
-    github: "https://github.com/JoeLeDev/Retourenedenacademy"
   },
   {
     title: "My Icc Online",
@@ -82,10 +78,16 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project, index) => {
+            const isLastOddItem =
+              projects.length % 2 !== 0 && index === projects.length - 1;
+
+            return (
             <div
               key={index}
-              className="glass-card overflow-hidden group transition-all hover:border-portfolio-primary/50 animate-fade-in"
+              className={`glass-card overflow-hidden group transition-all hover:border-portfolio-primary/50 animate-fade-in${
+                isLastOddItem ? " md:col-span-2 md:justify-self-center md:w-[calc(50%-1rem)]" : ""
+              }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative aspect-video overflow-hidden flex items-center justify-center">
@@ -129,7 +131,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
