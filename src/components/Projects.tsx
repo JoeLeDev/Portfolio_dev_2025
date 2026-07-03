@@ -7,7 +7,17 @@ import BikeSense from "../assets/Bikesense.png";
 import AdvalisSaaS from "../assets/Advalis.png";
 import SarahPortfolio from "../assets/SarahPortfolio.png";
 import RetourEnEden from "../assets/RetourEnEden.png";
+import CapitaineDepan from "../assets/CapitaineDepan.png";
 const projects = [
+  {
+    title: "Capitaine Depan'",
+    description:
+      "Site vitrine pour un serrurier en Île-de-France : hero optimisé, animations au scroll, formulaire de devis par e-mail (Resend), bouton d'appel mobile, bannière cookies RGPD et SEO avancé (Open Graph, schema.org Locksmith).",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Resend", "Vercel"],
+    image: CapitaineDepan,
+    live: "https://www.capitainedepan.com/",
+    github: "https://github.com/JoeLeDev/Capitaine_Depan",
+  },
   {
     title: "BikeSense",
     description:
