@@ -40,7 +40,7 @@ const projects = [
      github: "https://github.com/JoeLeDev/BikeSense"
   },
   {
-    title: "Advalis – SaaS de conseil",
+    title: "Advalis",
     description:
       "Création d’un MVP SaaS pour une société de conseil : gestion des offres et prestations, onboarding client, suivi des demandes et pipeline commercial, espace client simplifié et tableau de bord (indicateurs clés). Architecture full-stack moderne avec auth, rôles et modèles de données extensibles.",
     technologies: ["Next.js 14", "TypeScript", "Tailwind CSS"],
