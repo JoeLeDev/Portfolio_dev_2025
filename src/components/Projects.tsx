@@ -18,7 +18,7 @@ const projects = [
     live: "https://www.capitainedepan.com/",
   },
   {
-    title: "ICC Congés — Impact Centre Chrétien",
+    title: "ICC Congés",
     description:
       "Système de gestion et validation des congés pour les employés d'Impact Centre Chrétien. Workflow multi-niveaux (employé → manager → RH → direction), rôles et permissions, MFA pour les comptes sensibles, tableaux de bord dédiés et relances automatiques.",
     technologies: ["Next.js 15", "React 19", "Tailwind CSS 4", "Supabase", "MFA", "Vercel", "Playwright"],
