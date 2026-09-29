@@ -2,8 +2,11 @@ import { MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 pb-16 md:pt-32 md:pb-20 lg:pb-24 scroll-mt-24">
-      <div className="site-container">
+    <section
+      id="home"
+      className="pt-28 pb-16 md:pt-32 md:pb-20 lg:min-h-screen lg:pt-0 lg:pb-0 lg:flex lg:items-center scroll-mt-24"
+    >
+      <div className="site-container w-full lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <p className="section-eyebrow mb-4">
@@ -62,7 +65,10 @@ const Hero = () => {
                 fetchPriority="high"
               />
             </div>
-            
+            <p className="mt-4 flex items-center gap-1.5 text-sm text-muted">
+              <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
+              Basé en Île-de-France
+            </p>
           </div>
         </div>
       </div>

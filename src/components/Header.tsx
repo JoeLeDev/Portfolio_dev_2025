@@ -36,15 +36,12 @@ const Header = () => {
           className="flex items-center gap-2.5 text-white hover:opacity-90 transition-opacity"
         >
           <img
-            src="/uploads/logo.jpg"
+            src="/uploads/logo.png"
             alt="JoeLabs"
-            className="h-8 w-auto object-contain"
-            width={96}
-            height={32}
+            className="h-9 sm:h-10 w-auto object-contain"
+            width={120}
+            height={40}
           />
-          <span className="hidden sm:inline text-sm text-portfolio-muted font-medium">
-            Jonathan Luembe
-          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8" aria-label="Navigation principale">
