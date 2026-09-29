@@ -65,10 +65,6 @@ const Hero = () => {
                 fetchPriority="high"
               />
             </div>
-            <p className="mt-4 flex items-center gap-1.5 text-sm text-muted">
-              <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
-              Basé en Île-de-France
-            </p>
           </div>
         </div>
       </div>
