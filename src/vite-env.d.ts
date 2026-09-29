@@ -11,7 +11,9 @@ interface ImportMeta {
 // Types pour Google Analytics (gtag)
 declare global {
   interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
+    dataLayer: unknown[];
+    gtag: (...args: unknown[]) => void;
   }
 }
+
+export {};

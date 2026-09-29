@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-dev-2025.vercel.app/sitemap.xml
+Sitemap: https://www.jonathanluembe.dev/sitemap.xml

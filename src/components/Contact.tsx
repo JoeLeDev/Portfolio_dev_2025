@@ -1,159 +1,125 @@
-
-import { useState } from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Github, Mail, Linkedin, Link } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail } from "lucide-react";
+import SectionEyebrow from "@/components/SectionEyebrow";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message envoyé!",
-        description: "Merci pour votre message. Je vous répondrai dès que possible.",
-      });
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
   return (
-    <section id="contact" className="py-20 bg-gradient">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-gradient inline-block mb-2">Contact</h2>
-          <p className="text-white/70 max-w-2xl mx-auto">
-            N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez collaborer. Je suis toujours ouvert à discuter de nouveaux projets et opportunités.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8 animate-fade-in-left">
-            <h3 className="text-white">Restons en Contact</h3>
-            <p className="text-white/70">
-              Que vous ayez une question, une idée de projet ou une proposition de collaboration, n'hésitez pas à me contacter. Remplissez le formulaire ou contactez-moi via mon site de contact freelance, et je vous répondrai dès que possible.
+    <section id="contact" className="section-pad scroll-mt-24">
+      <div className="site-container">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div>
+            <SectionEyebrow>Contact</SectionEyebrow>
+            <h2 className="mb-4">
+              Parlons <span className="text-portfolio-accent">de la suite.</span>
+            </h2>
+            <p className="text-muted mb-8 max-w-md">
+              Une opportunité, une mission ou un projet web ? Je serai heureux d&apos;en
+              discuter avec vous.
             </p>
 
-            <div className="space-y-4">
-              <div className="flex items-center space-x-4 text-white/80">
-                <Mail className="w-5 h-5 text-portfolio-primary" />
-                <span>jonathanluembe@yahoo.com</span>
-              </div>
+            <a
+              href="mailto:jonathanluembe@yahoo.com"
+              className="inline-flex items-center gap-2 text-portfolio-secondary hover:text-portfolio-accent transition-colors mb-6"
+            >
+              <Mail className="w-4 h-4" aria-hidden="true" />
+              jonathanluembe@yahoo.com
+            </a>
 
-              <div className="flex items-center space-x-4 text-white/80">
-                <Link className="w-5 h-5 text-portfolio-primary" />
-                <a href="https://freelance.jonathanluembe.dev/" target="_blank" rel="noopener noreferrer">https://freelance.jonathanluembe.dev/</a>
-              </div>
-
-              <div className="flex space-x-4">
-                <a
-                  href="https://github.com/JoeLeDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-portfolio-primary/20 flex items-center justify-center transition-colors"
-                >
-                  <Github className="w-5 h-5 text-white" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/jonathanluembe/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-portfolio-primary/20 flex items-center justify-center transition-colors"
-                >
-                  <Linkedin className="w-5 h-5 text-white" />
-                </a>
-              </div>
+            <div className="flex flex-wrap gap-5 text-sm">
+              <a
+                href="https://github.com/JoeLeDev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/75 hover:text-white transition-colors"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jonathanluembe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/75 hover:text-white transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://freelance.jonathanluembe.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/75 hover:text-white transition-colors"
+              >
+                JoeLabs
+              </a>
             </div>
           </div>
 
-          <div className="glass-card p-6 animate-fade-in-right">
-            <form
-              action="https://formsubmit.co/jonathanluembe@yahoo.com"
-              method="POST"
-              className="space-y-4"
-            >
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio !" />
-              <input type="hidden" name="_next" value="https://ton-site.fr/merci" />
+          <form
+            action="https://formsubmit.co/jonathanluembe@yahoo.com"
+            method="POST"
+            className="space-y-4"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio !" />
+            <input type="hidden" name="_next" value="https://www.jonathanluembe.dev/#contact" />
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="text-white/80 mb-1 block">Nom</label>
-                <Input
+                <label htmlFor="name" className="text-sm text-portfolio-muted mb-1.5 block">
+                  Votre nom
+                </label>
+                <input
                   id="name"
                   name="name"
-                  placeholder="Votre nom"
+                  placeholder="Nom et prénom"
                   required
-                  className="bg-white/5 border-white/10 focus:border-portfolio-primary text-white placeholder:text-white/50"
+                  className="w-full rounded-btn bg-black/30 border border-white/10 px-3.5 py-2.5 text-sm text-white placeholder:text-white/35 focus:border-portfolio-primary focus:outline-none focus:ring-1 focus:ring-portfolio-primary"
                 />
               </div>
-
               <div>
-                <label htmlFor="email" className="text-white/80 mb-1 block">Email</label>
-                <Input
+                <label htmlFor="email" className="text-sm text-portfolio-muted mb-1.5 block">
+                  Votre e-mail
+                </label>
+                <input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Votre email"
+                  placeholder="vous@entreprise.fr"
                   required
-                  className="bg-white/5 border-white/10 focus:border-portfolio-primary text-white placeholder:text-white/50"
+                  className="w-full rounded-btn bg-black/30 border border-white/10 px-3.5 py-2.5 text-sm text-white placeholder:text-white/35 focus:border-portfolio-primary focus:outline-none focus:ring-1 focus:ring-portfolio-primary"
                 />
               </div>
+            </div>
 
-              <div>
-                <label htmlFor="subject" className="text-white/80 mb-1 block">Sujet</label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  placeholder="Sujet"
-                  required
-                  className="bg-white/5 border-white/10 focus:border-portfolio-primary text-white placeholder:text-white/50"
-                />
-              </div>
+            <div>
+              <label htmlFor="subject" className="text-sm text-portfolio-muted mb-1.5 block">
+                Sujet
+              </label>
+              <input
+                id="subject"
+                name="subject"
+                placeholder="Une opportunité, un projet..."
+                required
+                className="w-full rounded-btn bg-black/30 border border-white/10 px-3.5 py-2.5 text-sm text-white placeholder:text-white/35 focus:border-portfolio-primary focus:outline-none focus:ring-1 focus:ring-portfolio-primary"
+              />
+            </div>
 
-              <div>
-                <label htmlFor="message" className="text-white/80 mb-1 block">Message</label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Votre message"
-                  required
-                  className="bg-white/5 border-white/10 focus:border-portfolio-primary text-white placeholder:text-white/50 min-h-[150px]"
-                />
-              </div>
+            <div>
+              <label htmlFor="message" className="text-sm text-portfolio-muted mb-1.5 block">
+                Votre message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Parlez-moi de votre besoin."
+                required
+                rows={5}
+                className="w-full rounded-btn bg-black/30 border border-white/10 px-3.5 py-2.5 text-sm text-white placeholder:text-white/35 focus:border-portfolio-primary focus:outline-none focus:ring-1 focus:ring-portfolio-primary resize-y min-h-[140px]"
+              />
+            </div>
 
-              <Button
-                type="submit"
-                className="w-full bg-portfolio-primary hover:bg-portfolio-primary/90 text-white"
-              >
-                {isSubmitting ? 'Envoi en cours...' : 'Envoyer le Message'}
-              </Button>
-            </form>
-          </div>
+            <button type="submit" className="btn-primary w-full">
+              Envoyer le message
+            </button>
+          </form>
         </div>
       </div>
     </section>
